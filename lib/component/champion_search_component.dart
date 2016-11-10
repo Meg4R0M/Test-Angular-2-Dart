@@ -4,13 +4,13 @@ import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
 import 'package:stream_transformers/stream_transformers.dart';
 
-import 'hero_search_service.dart';
-import 'hero.dart';
+import 'package:angular2_tour_of_heroes/service/champion_search_service.dart';
+import '../hero.dart';
 
 @Component(
     selector: 'hero-search',
-    templateUrl: 'hero_search_component.html',
-    styleUrls: const ['hero_search_component.css'],
+    templateUrl: 'champion_search_component.html',
+    styleUrls: const ['champion_search_component.css'],
     providers: const [HeroSearchService])
 class HeroSearchComponent implements OnInit {
   HeroSearchService _heroSearchService;

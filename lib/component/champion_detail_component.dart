@@ -4,13 +4,13 @@ import 'dart:html';
 import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
 
-import 'hero.dart';
-import 'hero_service.dart';
+import '../hero.dart';
+import 'package:angular2_tour_of_heroes/service/champion_service.dart';
 
 @Component(
     selector: 'my-hero-detail',
-    templateUrl: 'hero_detail_component.html',
-    styleUrls: const ['hero_detail_component.css'])
+    templateUrl: 'champion_detail_component.html',
+    styleUrls: const ['champion_detail_component.css'])
 class HeroDetailComponent implements OnInit {
   Hero hero;
   final HeroService _heroService;

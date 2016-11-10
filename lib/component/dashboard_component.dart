@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
 
-import 'hero.dart';
-import 'hero_service.dart';
-import 'hero_search_component.dart';
+import '../hero.dart';
+import 'package:angular2_tour_of_heroes/service/champion_service.dart';
+import 'package:angular2_tour_of_heroes/component/champion_search_component.dart';
 
 @Component(
     selector: 'my-dashboard',
