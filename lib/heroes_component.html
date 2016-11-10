@@ -1,8 +1,8 @@
-<h2>My Heroes</h2>
+<h2>Mes Champions</h2>
 <div>
-  <label>Hero name:</label> <input #heroName />
+  <label>Nom du Champion:</label> <input #heroName />
   <button (click)="add(heroName.value); heroName.value=''">
-    Add
+    Ajouter
   </button>
 </div>
 <ul class="heroes">
@@ -16,7 +16,7 @@
 </ul>
 <div *ngIf="selectedHero != null">
   <h2>
-    {{selectedHero.name | uppercase}} is my hero
+    {{selectedHero.name | uppercase}} est mon champion
   </h2>
-  <button (click)="gotoDetail()">View Details</button>
+  <button (click)="gotoDetail()">Voir les Details</button>
 </div>

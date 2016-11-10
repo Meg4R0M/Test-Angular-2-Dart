@@ -11,8 +11,8 @@ import 'package:angular2_tour_of_heroes/hero_detail_component.dart';
     template: '''
       <h1>{{title}}</h1>
       <nav>
-        <a [routerLink]="['Dashboard']">Dashboard</a>
-        <a [routerLink]="['Heroes']">Heroes</a>
+        <a [routerLink]="['Dashboard']">Tableau de Bord</a>
+        <a [routerLink]="['Heroes']">Champion</a>
       </nav>
       <router-outlet></router-outlet>''',
     styleUrls: const ['app_component.css'],
@@ -29,5 +29,5 @@ import 'package:angular2_tour_of_heroes/hero_detail_component.dart';
   const Route(path: '/heroes', name: 'Heroes', component: HeroesComponent)
 ])
 class AppComponent {
-  String title = 'Tour of Heroes';
+  String title = 'League of Legends - Champions';
 }
